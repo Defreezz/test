@@ -17,6 +17,7 @@ console.log(myArrayy);
 //нечетные
 const ourArray = [];
 
-for (let i = 0; i < 10; i += 2) {
-    ourArray.push(i);
+for (let i = 0; i < 10; i++) {
+   if (i%2 !== 0) ourArray.push(i);
 }
+console.log(ourArray);
