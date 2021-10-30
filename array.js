@@ -1,16 +1,41 @@
-function multiplyAll(arr) {
-    let product = 1;
-    // Only change code below this line
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr[i].length; j++) {
-            console.log(arr[i][j]);
-            product *= arr[i][j] ;
+// Setup
+const contacts = [
+    {
+        firstName: "Akira",
+        lastName: "Laine",
+        number: "0543236543",
+        likes: ["Pizza", "Coding", "Brownie Points"],
+    },
+    {
+        firstName: "Harry",
+        lastName: "Potter",
+        number: "0994372684",
+        likes: ["Hogwarts", "Magic", "Hagrid"],
+    },
+    {
+        firstName: "Sherlock",
+        lastName: "Holmes",
+        number: "0487345643",
+        likes: ["Intriguing Cases", "Violin"],
+    },
+    {
+        firstName: "Kristian",
+        lastName: "Vos",
+        number: "unknown",
+        likes: ["JavaScript", "Gaming", "Foxes"],
+    },
+];
+
+function lookUpProfile(name, prop) {
+    for (let i = 0; i > contacts.length; i++){
+        const con = contacts[i];
+        if (con.firstName === name && con.hasOwnProperty(prop)) {
+            return con[prop];
+        } else if (con.firstName === name && !con.hasOwnProperty(prop)) {
+            return "No such property";
         }
     }
-    // Only change code above this line
-    console.log(product);
-
-    return product;
+    return "No such contact";
 }
 
-multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
+lookUpProfile("Kristian", "lastName");
