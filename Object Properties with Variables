@@ -1,7 +1,6 @@
 function phoneticLookup(val) {
   
 
-  // Only change code below this line
   let obj = {
     "alpha": "Adams",
     "bravo": "Boston",
@@ -12,7 +11,6 @@ function phoneticLookup(val) {
   };
   let result = obj[val];
 
-  // Only change code above this line
   return result;
 }
 
