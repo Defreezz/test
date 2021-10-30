@@ -9,9 +9,10 @@ function phoneticLookup(val) {
     "echo": "Easy",
     "foxtrot": "Frank"
   };
-  let result = obj[val];
+  result = obj[val];
 
   return result;
 }
 
 phoneticLookup("charlie");
+console.log(phoneticLookup("charlie"));
