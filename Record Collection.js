@@ -21,13 +21,15 @@ const recordCollection = {
 
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
-if (prop !== "tracks" && value !== "") {
-    records[id][prop] = value;
-} else if (prop === "tracks" && (records[id].hasOwnProperty("tracks") !== "True")) {
-    records[id][prop] = [value] ;
-} else if (prop === "tracks" && value !=="") {
-    records[id][prop] = prop.push(value);
-}
+    if (prop !== "tracks" && value !== "") {
+        records[id][prop] = value;
+    } else if (prop === "tracks" && !records[id].hasOwnProperty("tracks")) {
+        records[id][prop] = [value] ;
+    } else if (prop === "tracks" && value !=="") {
+        records[id][prop].push(value);
+    } else if (value === "") {
+        delete records[id][prop];
+    }
     return records;
 }
 
@@ -35,5 +37,8 @@ updateRecords(recordCollection, 5439, 'artist', 'ABBA');
 updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me");
 updateRecords(recordCollection, 2548, "artist", "");
 updateRecords(recordCollection, 1245, "tracks", "Addicted to Love");
+updateRecords(recordCollection, 2468, "tracks", "Free");
 updateRecords(recordCollection, 2548, "tracks", "");
+updateRecords(recordCollection, 1245, "albumTitle", "Riptide");
+
 console.log(recordCollection);
