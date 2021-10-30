@@ -5,3 +5,18 @@ while (i > -1) {
     i--;
 }
 console.log(myArray);
+
+
+const myArrayy = [];
+
+for (let i = 1; i < 6; i++){
+    myArrayy.push(i);
+}
+console.log(myArrayy);
+
+//нечетные
+const ourArray = [];
+
+for (let i = 0; i < 10; i += 2) {
+    ourArray.push(i);
+}
