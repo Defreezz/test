@@ -1,18 +1,15 @@
-function phoneticLookup(val) {
-  
+const ourStorage = {
+  "desk": {
+    "drawer": "stapler"
+  },
+  "cabinet": {
+    "top drawer": {
+      "folder1": "a file",
+      "folder2": "secrets"
+    },
+    "bottom drawer": "soda"
+  }
+};
 
-  let obj = {
-    "alpha": "Adams",
-    "bravo": "Boston",
-    "charlie": "Chicago",
-    "delta": "Denver",
-    "echo": "Easy",
-    "foxtrot": "Frank"
-  };
-  result = obj[val];
-
-  return result;
-}
-
-phoneticLookup("charlie");
-console.log(phoneticLookup("charlie"));
+ourStorage.cabinet["top drawer"].folder2;
+ourStorage.desk.drawer;
