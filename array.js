@@ -4,7 +4,7 @@
             return [];
         } else {
             const countArray = countdown(n - 1);
-            countArray.push(n);
+            countArray.unshift(n);
             return countArray;
         }
     }
