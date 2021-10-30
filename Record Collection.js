@@ -21,11 +21,19 @@ const recordCollection = {
 
 // Only change code below this line
 function updateRecords(records, id, prop, value) {
-if (prop !== "track" && value !== "") {
+if (prop !== "tracks" && value !== "") {
     records[id][prop] = value;
+} else if (prop === "tracks" && (records[id].hasOwnProperty("tracks") !== "True")) {
+    records[id][prop] = [value] ;
+} else if (prop === "tracks" && value !=="") {
+    records[id][prop] = prop.push(value);
 }
     return records;
 }
 
 updateRecords(recordCollection, 5439, 'artist', 'ABBA');
+updateRecords(recordCollection, 5439, "tracks", "Take a Chance on Me");
+updateRecords(recordCollection, 2548, "artist", "");
+updateRecords(recordCollection, 1245, "tracks", "Addicted to Love");
+updateRecords(recordCollection, 2548, "tracks", "");
 console.log(recordCollection);
