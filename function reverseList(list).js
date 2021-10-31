@@ -1,5 +1,7 @@
 function reverseList(list) {
-    let revers = list.reverse;
+    list.reverse();
+    return list;
 
 }
 reverseList([1,2,3,4]);
+console.log([list]);
