@@ -6,4 +6,4 @@ function even_or_odd(number) {
     }
 
 }
-//console.log(even_or_odd(9))
+console.log(even_or_odd(9))
