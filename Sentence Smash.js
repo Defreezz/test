@@ -1,6 +1,7 @@
 // Smash Words
 function smash (words) {
-    return words[0] + " " + words[1];
+    return words.join(" ");
 
 
 };
+console.log(smash(["hello", "world"]));
