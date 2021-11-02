@@ -1,7 +1,8 @@
 function getStatus(isBusy) {
     var msg = (isBusy ? "busy" : "available");
-    return
+    //return
     {
-        status: msg
+        return msg;
     }
 }
+console.log(getStatus(true));
