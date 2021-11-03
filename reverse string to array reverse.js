@@ -5,4 +5,3 @@ function digitize(n) {
     return nArr;
 }
  digitize("123456");
-
