@@ -10,4 +10,4 @@ function createArray(number){
 
     return newArray;
 }
-createArray(4)
+createArray(5)
