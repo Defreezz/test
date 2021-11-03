@@ -1,9 +1,13 @@
 function createArray(number){
-    var newArray = [];
+    let newArray = [];
+    console.log(newArray);
 
-    for(var counter = 1; counter <= number;){
+    for (let counter = 1; counter <= number; counter+=1){
         newArray.push(counter);
+        console.log(newArray);
+
     }
 
     return newArray;
 }
+createArray(4)
