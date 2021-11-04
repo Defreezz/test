@@ -10,4 +10,4 @@ function divisibleBy(numbers, divisor){
     return result;
 }
 
-divisibleBy([2,4,3,,5,6], 3)
+divisibleBy([2,4,3,5,6], 3)
