@@ -1,6 +1,6 @@
 function numberToPower(number, power){
     // Code here
-    s = 0
+    s = 1
     for (let i=0; i<power; i++){
         s *=number
     }
