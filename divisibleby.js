@@ -2,7 +2,7 @@ function divisibleBy(numbers, divisor){
     let result = [];
     for (let i = 0; i<=numbers.length; i++){
         if(numbers[i]%divisor === 0 ){
-            result.push(i)
+            result.push(numbers[i])
         }
 
     }
@@ -10,4 +10,4 @@ function divisibleBy(numbers, divisor){
     return result;
 }
 
-divisibleBy([2,4,3,,5,], 2)
+divisibleBy([2,4,3,,5,6], 3)
