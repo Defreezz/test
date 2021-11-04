@@ -1,4 +1,4 @@
-class convert {
+/*class convert {
 }
 
 function weatherInfo (temp) {
@@ -15,4 +15,4 @@ function convertToCelsius (temperature) {
     return temperature
 }
 
-weatherInfo(114)
+weatherInfo(114)*/
